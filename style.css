@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+ body {
+     height: 100%;
+     width: 100%;
+     background-color: black;
+
+ }
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.overflow {
+     overflow: hidden;
+ }
+
+.wrapper {
+    background-image: url("dust.png");
+    width: 100%;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
+}
+
+.stop {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 15vmax;
+    height: 15vmax;
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+}
+
+.wrapper-item:not(:last-child) {
+    margin-right: 5vmax;
+}
